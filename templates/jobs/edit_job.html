@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+         <link rel="stylesheet" href="{% static 'jobs/style.css' %}">
+    </head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<div class= "container">
+<h2>Edit Job</h2>
+
+<form method="post">
+    {% csrf_token %}
+    <input type="text" name="company"  value="{{ job.company }}"><br>
+    <input type="text" name="role"  value="{{ job.role }}"><br>
+    <input type="text" name="status"  value="{{ job.status }}"><br>
+    <input type="date" name="date_applied"  value="{{ job.date_applied|date:'Y-m-d' }}"><br>
+    <textarea name="notes">{{ job.notes }}</textarea><br>
+    <button type="submit">Update</button>
+</form>
+</div>
+</body>
+</html>
+

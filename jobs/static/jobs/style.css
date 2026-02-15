@@ -1,0 +1,156 @@
+
+body {
+    font-family: "Segoe UI",Arial, sans-serif;
+    background: linear-gradient(to right, #0d6efd, #0d6efd);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 900px;
+    margin: 50px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+}
+.status {
+    padding: 5px 10px;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+}
+
+.status.applied { background-color: #3498db; }
+.status.interview { background-color: #f39c12; }
+.status.offer { background-color: #2ecc71; }
+.status.rejected { background-color: #e74c3c; }
+
+.form-box {
+    width: 350px;
+    margin: 100px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+}
+
+h2 {
+    text-align: center;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+
+button:hover {
+    background-color: #0b0d18;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #667eea;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: #667eea;
+    margin: 5px;
+}
+
+.logout {
+    float: right;
+}
+.navbar {
+    background-color: #df66ea;
+    padding: 15px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.navbar a {
+    color: white;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.card {
+    width: 22%;
+    padding: 20px;
+    background: #f1f3ff;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 28px;
+    font-weight: bold;
+}
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #667eea;
+}
+.search-bar {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar input {
+    width: 300px;
+    padding: 10px;
+    border-radius: 6px 0 0 6px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #0d6efd; /* bootstrap primary */
+    color: white;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+}
