@@ -6,6 +6,8 @@ from .forms import RegisterForm, LoginForm
 from django.db.models import Q
 from django.contrib.auth import authenticate, login
 from django.contrib import messages
+from django.conf import settings
+print(settings.DATABASES)
 
 
 # ---------- AUTH ----------
